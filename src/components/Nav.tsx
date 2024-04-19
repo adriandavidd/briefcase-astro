@@ -1,3 +1,5 @@
+import Test from "./test";
+
 const Nav = () => {
   return (
     <div>
@@ -29,7 +31,7 @@ const Nav = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>Homepage</a>
+                <a href="/src/components/test.tsx">Homepage</a>
               </li>
               <li>
                 <a>Portfolio</a>
@@ -41,12 +43,6 @@ const Nav = () => {
           </div>
         </div>
         <div className="navbar-end"></div>
-      </div>
-      <div className=" w-full h-20 flex flex-col justify-center items-center my-20 ">
-        <p className="text-5xl font-bold text-gray-400">Hi, I'm Adrian Dav</p>
-        <p className="text-4xl font-bold text-gray-600 my-5">
-          Front-end Developer
-        </p>
       </div>
     </div>
   );
