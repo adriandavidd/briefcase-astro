@@ -2,9 +2,10 @@
 import Layout from "../layouts/Layout.astro";
 import Nav from "../components/Nav";
 import Home from "../components/Home";
+import "@fontsource-variable/onest";
 ---
 
 <Layout title="Adrian Uriel Briefcase">
   <Nav />
-  <Home />
+  <Home client:only />
 </Layout>
