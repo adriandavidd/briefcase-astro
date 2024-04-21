@@ -29,10 +29,12 @@ const Nav = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-neutral-900 rounded-box w-52"
             >
               <li>
-                <a href="/">Homepage</a>
+                <a className="hover:text-white" href="/">
+                  Homepage
+                </a>
               </li>
               <li>
-                <a>Portfolio</a>
+                <a className="hover:text-white">Portfolio</a>
               </li>
               <li></li>
             </ul>
