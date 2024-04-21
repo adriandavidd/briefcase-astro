@@ -1,3 +1,6 @@
+import { TypeAnimation } from "react-type-animation";
+import { Lumiflex } from "uvcanvas";
+
 const Home = () => {
   return (
     <div className="">
