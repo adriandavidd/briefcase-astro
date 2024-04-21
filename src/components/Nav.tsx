@@ -1,8 +1,6 @@
-import Test from "./test";
-
 const Nav = () => {
   return (
-    <div>
+    <div className=" font-bold">
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
@@ -31,7 +29,7 @@ const Nav = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a href="/src/components/test.tsx">Homepage</a>
+                <a href="/">Homepage</a>
               </li>
               <li>
                 <a>Portfolio</a>
