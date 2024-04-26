@@ -9,7 +9,7 @@ const Nav: React.FC = () => {
             <div
               tabIndex={0}
               role="button"
-              className="btn btn-ghost btn-circle"
+              className="btn btn-ghost btn-circle dark:brightness-150 brightness-50"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@ const Nav: React.FC = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-neutral-900 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-zinc-800 rounded-box w-52"
             >
               <li>
                 <a className="hover:text-white" href="/">
@@ -45,7 +45,7 @@ const Nav: React.FC = () => {
         <div className="navbar-end">
           <a href="https://github.com/adriandavidd" target="_blank">
             <svg
-              className="h-12 w-12 mr-5 hover:brightness-200 p-2  "
+              className="h-12 w-12 mr-5 dark:hover:brightness-125 hover:brightness-50 p-2  "
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +78,7 @@ const Nav: React.FC = () => {
           </a>
           <a href="">
             <svg
-              className="h-12 w-12 mr-5 hover:brightness-200 p-2  "
+              className="h-12 w-12 mr-5 dark:hover:brightness-125 hover:brightness-50 p-2  "
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
