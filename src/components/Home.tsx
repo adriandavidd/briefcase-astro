@@ -1,5 +1,5 @@
 import { TypeAnimation } from "react-type-animation";
-import { Lumiflex } from "uvcanvas";
+import About from "./About";
 
 const Home = () => {
   return (
@@ -17,6 +17,9 @@ const Home = () => {
         <p className="text-4xl font-bold dark:text-zinc-600 text-zinc-500 my-5 hover:brightness-110">
           Front-end Developer
         </p>
+      </div>
+      <div className="my-40 h-40 w-full flex justify-center items-center">
+        <About></About>
       </div>
     </div>
   );
