@@ -1,6 +1,6 @@
 const About: React.FC = () => {
   return (
-    <div className=" w-[700px] bg-zinc-300 border-[1px] border-zinc-200 dark:border-zinc-700  dark:bg-zinc-900 p-5 rounded-md drop-shadow-md">
+    <div className=" w-[700px] bg-zinc-300 border-[2px] border-zinc-200 dark:border-zinc-800  dark:bg-[#0a0a0a] p-5 rounded-md drop-shadow-xl">
       <h1 className="font-Onest font-bold text-2xl mb-2 text-zinc-800 dark:text-zinc-300 ">
         About Me
       </h1>
