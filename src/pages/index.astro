@@ -2,12 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 import Home from "../components/Home";
 import Nav from "../components/Nav";
+
 import "@fontsource-variable/onest";
 ---
 
 <Layout title="Adrian Uriel Briefcase">
   <div
-    class="absolute inset-0 h-full w-full bg-zinc-500 [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_120%)] dark:absolute dark:top-0 dark:z-[-2] dark:bg-neutral-950 dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+    class="inset-0 h-screen w-screen bg-[#d4d4d8] bg-[radial-gradient(800%_90%_at_50%_70%,#d4d4d8_20%,#63e_110%)] dark:absolute dark:top-0 dark:z-[-2] dark:bg-neutral-950 dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
   >
     <Nav client:load />
     <Home client:load />

@@ -8,7 +8,7 @@ const Toggle: React.FC = () => {
         <input
           type="checkbox"
           value="synthwave"
-          className="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2"
+          className="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2 "
           onClick={Darkmode}
         />
         <svg
