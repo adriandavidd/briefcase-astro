@@ -2,6 +2,12 @@ const Toggle: React.FC = () => {
   const Darkmode = () => {
     document.documentElement.classList.toggle("dark");
   };
+
+  if (document.documentElement.classList.toggle("dark")) {
+    return document.documentElement.outerHTML;
+  } else {
+  }
+
   return (
     <div>
       <label className="cursor-pointer grid place-items-center mr-3">
