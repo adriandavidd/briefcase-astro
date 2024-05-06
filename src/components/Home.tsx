@@ -3,7 +3,7 @@ import About from "./About";
 import Carousel from "../components/Carousel";
 const Home = () => {
   return (
-    <div className="">
+    <div>
       <div className=" w-full h-20 flex flex-col justify-center items-center my-20 font-Onest">
         <p className="text-5xl font-bold dark:text-zinc-300 text-zinc-800">
           Hi,
@@ -25,7 +25,6 @@ const Home = () => {
       <div className="mt-11 w-full flex justify-center items-center bg-zinc-300  dark:bg-[#0a0a0a]">
         <About></About>
       </div>
-      <div></div>
     </div>
   );
 };
