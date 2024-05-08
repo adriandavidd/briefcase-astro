@@ -1,20 +1,26 @@
 import React, { useState, useEffect } from "react";
 
-let DarkModeText: React.FC = () => {
-  let [isDark, setIsDark] = useState(false);
+const DarkModeText: React.FC = () => {
+  const [isDarkMode, setIsDarkMode] = useState(
+    document.documentElement.classList.contains("dark")
+  );
 
   useEffect(() => {
-    setIsDark(document.documentElement.classList.contains("dark"));
+    const checkDarkMode = () =>
+      setIsDarkMode(document.documentElement.classList.contains("dark"));
+    window.addEventListener("DOMContentLoaded", checkDarkMode);
+    window.addEventListener("load", checkDarkMode);
+    window.addEventListener("change", checkDarkMode);
+
+    return () => {
+      window.removeEventListener("DOMContentLoaded", checkDarkMode);
+      window.removeEventListener("load", checkDarkMode);
+      window.removeEventListener("change", checkDarkMode);
+    };
   }, []);
 
   return (
-    <div>
-      {isDark ? (
-        <div>Modo oscuro activado</div>
-      ) : (
-        <div>Modo claro activado</div>
-      )}
-    </div>
+    <div>{isDarkMode ? <div>Modo oscuro</div> : <div>Modo claro</div>}</div>
   );
 };
 
