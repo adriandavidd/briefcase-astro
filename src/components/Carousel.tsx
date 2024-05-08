@@ -1,11 +1,23 @@
-import { useState } from "react";
-import Icons from "./Icons";
-import { Darkmode } from "./Toggle-Switch";
+import React, { useState, useEffect } from 'react';
 
-const darkmode = document.documentElement.toggleAttribute("dark");
+const DarkModeText: React.FC = () => {
+  const [isDark, setIsDark] = useState(false);
 
-const Carousel: React.FC = () => {
-  return <div>{darkmode ? <div>a</div> : <div>b</div>}</div>;
+  useEffect(() => {
+    setIsDark(document.documentElement.classList.contains('dark'));
+  }, []);
+
+  return (
+    <div>
+      {isDark ? (
+        // Renderizado para el modo oscuro
+        <div>Modo oscuro activado</div>
+      ) : (
+        // Renderizado para el modo claro
+        <div>Modo claro activado</div>
+      )}
+    </div>
+  );
 };
 
-export default Carousel;
+export default DarkModeText;
