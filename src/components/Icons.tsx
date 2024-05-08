@@ -1,25 +1,75 @@
-const Icons: React.FC = () => {
-  return (
-    <div className="flex items-center justify-center gap-10 w-full h-30 bg-transparent p-5 rounded-md">
-      <img src="/html5.svg" alt="github" className="w-20 h-20 contrast-75 " />
+import React from "react";
+import { Carousel } from "react-responsive-carousel";
+import { useState, useEffect } from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
-      <img src="/css3.svg" alt="css" className="w-20 h-20 contrast-75 " />
-      <img src="/javascript.svg" alt="js" className="w-20 h-20 contrast-75 " />
-      <img
-        src="/typescript.svg"
-        alt="ts"
-        className="w-20 h-20 contrast-75 dark:"
-      />
-      <img
-        src="/tailwindcss.svg"
-        alt="tailwind"
-        className="w-20 h-20 contrast-75 "
-      />
-      <img src="/react.svg" alt="react" className="w-20 h-20 contrast-75 " />
-      <img src="/vite.svg" alt="vite" className="w-20 h-20 contrast-75 " />
-      <img src="/nextdotjs.svg" alt="next" className="w-20 h-20 contrast-75 " />
-      <img src="/astro.svg" alt="astro" className="w-20 h-20 contrast-75 " />
-    </div>
+const Icons: React.FC = () => {
+  const images = [
+    "/html5.svg",
+    "/css3.svg",
+    "/javascript.svg",
+    "/typescript.svg",
+    "/tailwindcss.svg",
+    "/react.svg",
+    "/vite.svg",
+    "/nextdotjs.svg",
+    "/astro.svg",
+    "/html5.svg",
+    "/css3.svg",
+    "/javascript.svg",
+    "/typescript.svg",
+    "/tailwindcss.svg",
+    "/react.svg",
+    "/vite.svg",
+    "/nextdotjs.svg",
+    "/astro.svg",
+    "/html5.svg",
+    "/css3.svg",
+    "/javascript.svg",
+    "/typescript.svg",
+    "/tailwindcss.svg",
+    "/react.svg",
+    "/vite.svg",
+    "/nextdotjs.svg",
+    "/astro.svg",
+    "/html5.svg",
+    "/css3.svg",
+    "/javascript.svg",
+    "/typescript.svg",
+    "/tailwindcss.svg",
+    "/react.svg",
+    "/vite.svg",
+    "/nextdotjs.svg",
+    "/astro.svg",
+    "/html5.svg",
+    "/css3.svg",
+    "/javascript.svg",
+    "/typescript.svg",
+    "/tailwindcss.svg",
+    "/react.svg",
+    "/vite.svg",
+    "/nextdotjs.svg",
+    "/astro.svg",
+  ];
+
+  return (
+    <Carousel
+      showThumbs={false}
+      infiniteLoop
+      autoPlay
+      showIndicators={false}
+      showStatus={false}
+      showArrows={false}
+      transitionTime={700}
+      autoFocus={true}
+      stopOnHover={false}
+    >
+      {images.map((img, index) => (
+        <div key={index}>
+          <img src={img} alt="" className="w-full h-20 contrast-75" />
+        </div>
+      ))}
+    </Carousel>
   );
 };
 

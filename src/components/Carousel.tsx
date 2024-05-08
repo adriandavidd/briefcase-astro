@@ -20,7 +20,7 @@ const DarkModeText: React.FC = () => {
     };
   }, []);
 
-  return <div>{isDarkMode ? <Icons /> : <div>iconos</div>}</div>;
+  return <div className="w-full">{isDarkMode ? <Icons /> : <Icons />}</div>;
 };
 
 export default DarkModeText;
