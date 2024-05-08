@@ -1,8 +1,8 @@
-const Toggle: React.FC = () => {
-  const Darkmode = () => {
-    document.documentElement.classList.toggle("dark");
-  };
+export const Darkmode = () => {
+  document.documentElement.classList.toggle("dark");
+};
 
+export const Toggle: React.FC = () => {
   return (
     <div>
       <label className="cursor-pointer grid place-items-center mr-3">
@@ -45,5 +45,3 @@ const Toggle: React.FC = () => {
     </div>
   );
 };
-
-export default Toggle;

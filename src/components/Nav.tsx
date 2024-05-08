@@ -1,4 +1,4 @@
-import Toggle from "./Toggle-Switch";
+import { Toggle } from "./Toggle-Switch";
 
 const Nav: React.FC = () => {
   return (
