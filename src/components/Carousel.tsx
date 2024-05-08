@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import Icons from "./Icons";
 
 const DarkModeText: React.FC = () => {
   const [isDarkMode, setIsDarkMode] = useState(
@@ -19,9 +20,7 @@ const DarkModeText: React.FC = () => {
     };
   }, []);
 
-  return (
-    <div>{isDarkMode ? <div>Modo oscuro</div> : <div>Modo claro</div>}</div>
-  );
+  return <div>{isDarkMode ? <Icons /> : <div>iconos</div>}</div>;
 };
 
 export default DarkModeText;
