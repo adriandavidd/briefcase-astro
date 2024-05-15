@@ -1,9 +1,9 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-const Icons: React.FC = () => {
+const IconsWhite: React.FC = () => {
   const images = [
-    "/html5.svg",
+    "/htmlWhite.svg",
     "/css3.svg",
     "/javascript.svg",
     "/typescript.svg",
@@ -73,4 +73,4 @@ const Icons: React.FC = () => {
   );
 };
 
-export default Icons;
+export default IconsWhite;

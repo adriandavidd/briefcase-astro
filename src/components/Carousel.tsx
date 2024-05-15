@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 import Icons from "./Icons";
+import IconsWhite from "./IconsWhite";
+import CarouselComponent from "./Carousel-Component";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const DarkModeText: React.FC = () => {
   const [isDarkMode, setIsDarkMode] = useState(
@@ -7,11 +10,12 @@ const DarkModeText: React.FC = () => {
   );
 
   useEffect(() => {
-    const checkDarkMode = () =>
+    const checkDarkMode = () => {
       setIsDarkMode(document.documentElement.classList.contains("dark"));
-    window.addEventListener("DOMContentLoaded", checkDarkMode);
-    window.addEventListener("load", checkDarkMode);
-    window.addEventListener("change", checkDarkMode);
+      window.addEventListener("DOMContentLoaded", checkDarkMode);
+      window.addEventListener("load", checkDarkMode);
+      window.addEventListener("change", checkDarkMode);
+    };
 
     return () => {
       window.removeEventListener("DOMContentLoaded", checkDarkMode);
@@ -20,7 +24,9 @@ const DarkModeText: React.FC = () => {
     };
   }, []);
 
-  return <div className="w-full">{isDarkMode ? <Icons /> : <Icons />}</div>;
+  return (
+    <div className="w-full">{isDarkMode ? [<Icons />] : [<IconsWhite />]}</div>
+  );
 };
 
 export default DarkModeText;
