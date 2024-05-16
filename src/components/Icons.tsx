@@ -1,44 +1,5 @@
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-
 const Icons: React.FC = () => {
   const images = [
-    "/html5.svg",
-    "/css3.svg",
-    "/javascript.svg",
-    "/typescript.svg",
-    "/tailwindcss.svg",
-    "/react.svg",
-    "/vite.svg",
-    "/nextdotjs.svg",
-    "/astro.svg",
-    "/html5.svg",
-    "/css3.svg",
-    "/javascript.svg",
-    "/typescript.svg",
-    "/tailwindcss.svg",
-    "/react.svg",
-    "/vite.svg",
-    "/nextdotjs.svg",
-    "/astro.svg",
-    "/html5.svg",
-    "/css3.svg",
-    "/javascript.svg",
-    "/typescript.svg",
-    "/tailwindcss.svg",
-    "/react.svg",
-    "/vite.svg",
-    "/nextdotjs.svg",
-    "/astro.svg",
-    "/html5.svg",
-    "/css3.svg",
-    "/javascript.svg",
-    "/typescript.svg",
-    "/tailwindcss.svg",
-    "/react.svg",
-    "/vite.svg",
-    "/nextdotjs.svg",
-    "/astro.svg",
     "/html5.svg",
     "/css3.svg",
     "/javascript.svg",
@@ -52,23 +13,15 @@ const Icons: React.FC = () => {
 
   return (
     <>
-      <Carousel
-        showThumbs={false}
-        infiniteLoop
-        autoPlay
-        showIndicators={false}
-        showStatus={false}
-        showArrows={false}
-        transitionTime={700}
-        autoFocus={true}
-        stopOnHover={false}
-      >
-        {images.map((img, index) => (
-          <div key={index}>
-            <img src={img} alt="" className="w-full h-20 contrast-75" />
-          </div>
-        ))}
-      </Carousel>
+      {images.map((img, index) => (
+        <div key={index}>
+          <img
+            src={img}
+            alt=""
+            className="h-24 w-24 contrast-75 dark:invert mx-36 "
+          />
+        </div>
+      ))}
     </>
   );
 };
