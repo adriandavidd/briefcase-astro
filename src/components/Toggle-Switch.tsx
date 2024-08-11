@@ -1,4 +1,4 @@
-export const Darkmode = () => {
+const Darkmode = () => {
   document.documentElement.classList.toggle("dark");
 };
 
@@ -8,7 +8,7 @@ export const Toggle: React.FC = () => {
       <label className="cursor-pointer grid place-items-center mr-3">
         <input
           type="checkbox"
-          value="synthwave"
+          defaultChecked
           className="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2 "
           onClick={Darkmode}
         />

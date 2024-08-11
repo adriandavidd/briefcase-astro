@@ -6,7 +6,7 @@ let TextAnimation = () => {
       <p className="text-5xl font-bold dark:text-white text-zinc-800 ">
         Hi,
         <TypeAnimation
-          sequence={[" I'm Adrian", 4000, " I love programming", 1000]}
+          sequence={[" I'm Adrian", 4000, " What do you plan to do?", 1000]}
           deletionSpeed={40}
           speed={20}
           repeat={Infinity}
